@@ -1,16 +1,20 @@
 #include<stdio.h>
-char main()
+#include<ctype.h>
+int main()
 {
-char i;
-printf("enter the string");
+char i,k;
+printf("enter the string \t");
 scanf("%c",&i);
-if(i==(0-9))
+for(k=0;k<=i;k++)
 {
-printf("%c is numeric",i);
+if(isdigit(i))
+{
+printf("%c is numeric \n",i);
 }
 else
 {
-printf("%d not numeric",i);
+printf("%c not numeric \n",i);
+}
 }
 return 0;
 }
