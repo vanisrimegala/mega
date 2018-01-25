@@ -2,10 +2,8 @@
 #include<ctype.h>
 int main()
 {
-char i,k;
-printf("enter the string \t");
+char i;
 scanf("%c",&i);
-for(k=0;k<=i;k++)
 {
 if(isdigit(i))
 {
