@@ -23,7 +23,6 @@ for(i=0;i<5;i++)
 {
 printf("%d \n",a[i]);
 }
-printf("%d",a[i/2]);
-}
+printf(" the median element is %d",a[i/2]);
 return 0;
 }
