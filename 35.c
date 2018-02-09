@@ -1,13 +1,18 @@
 #include<stdio.h>
-#include<ctype.h>
  int main()
-{
-
+ {
 char ch[100];
-printf("enter the string");
-scanf("%s",ch);
-if(isalnum(ch))
-{
-printf("%s",ch);
-}return 0;
+  int count=0,i;
+printf("enter the string \n");
+scanf("%[^\n]s",ch);
+  for(i=0;ch[i]!='\0';i++)
+  {
+   if(ch[i]>='0'&&ch[i]<='9')
+   {
+    count=count+1;
+   }
+  }
+printf("%d",count);
+return 0;
 }
+
